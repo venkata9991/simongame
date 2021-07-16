@@ -22,7 +22,7 @@ $(".btn").click(function(){
 function checkAnswer(currentLevel)
 {
   if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
-    console.log("success");
+    
     if (userClickedPattern.length === gamePattern.length){
       setTimeout(function () {
         nextSequence();
@@ -31,7 +31,7 @@ function checkAnswer(currentLevel)
   }
    else
   {
-    console.log("wrong");
+    
     playSound("wrong");
     $("body").addClass("game-over");
     setTimeout(function () {
@@ -52,7 +52,7 @@ function nextSequence()
   gamePattern.push(randomChosenColour);
   $("#"+randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
   playSound(randomChosenColour);
-  animatePress(randomChosenColour);
+  
  
 }
 
