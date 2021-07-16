@@ -53,7 +53,7 @@ function nextSequence()
   $("#"+randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
   playSound(randomChosenColour);
   animatePress(randomChosenColour);
- checkAnswer(userClickedPattern.length-1);
+ 
 }
 
 function playSound(name){
