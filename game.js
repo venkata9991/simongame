@@ -43,7 +43,7 @@ function checkAnswer(currentLevel)
   }
 
 }
-function nextSequence()
+function nextSequence() {
   userClickedPattern = [];
   level++;
   $("#level-title").text("Level " + level);
